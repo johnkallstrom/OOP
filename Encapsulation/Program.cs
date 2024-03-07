@@ -1,11 +1,22 @@
 ﻿using Encapsulation;
 
-var person = new Person();
-person.FirstName = "Bob";
-person.LastName = "Frapples";
-person.Age = 55;
-person.Height = 192;
-person.Weight = 75;
+var handler = new PersonHandler();
 
-Console.WriteLine(person.ToString());
+Person bob = null;
+
+try
+{
+	bob = handler.CreatePerson(55, null, "Frapples", 188, 81);
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine(ex.Message);
+}
+
+
+if (bob is not null)
+{
+	Console.WriteLine(bob.ToString());
+}
+
 Console.ReadKey();
