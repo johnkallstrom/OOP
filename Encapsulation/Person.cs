@@ -5,8 +5,8 @@
 		private int age;
 		private string firstName;
 		private string lastName;
-		private int height;
-		private int weight;
+		private double height;
+		private double weight;
 
         public int Age 
 		{ 
@@ -56,13 +56,13 @@
 			}
 		}
 
-		public int Height
+		public double Height
 		{
 			get { return height; }
 			set { height = value; }
 		}
 
-		public int Weight
+		public double Weight
 		{
 			get { return weight; }
 			set { weight = value; }
