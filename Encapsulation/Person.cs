@@ -11,19 +11,37 @@
         public int Age 
 		{ 
 			get { return age; } 
-			set { age = value; } 
+			set 
+			{ 
+				if (value > 0)
+				{
+					age = value;
+				}
+			} 
 		}
 
         public string FirstName 
 		{ 
 			get { return firstName; } 
-			set { firstName = value; } 
+			set 
+			{ 
+				if (value.Length >= 2 && value.Length <= 10)
+				{
+					firstName = value;
+				}
+			} 
 		}
 
 		public string LastName
 		{
 			get { return lastName; }
-			set { lastName = value; }
+			set 
+			{ 
+				if (value.Length >= 3 && value.Length <= 15)
+				{
+					lastName = value;
+				}
+			}
 		}
 
 		public int Height
@@ -36,6 +54,11 @@
 		{
 			get { return weight; }
 			set { weight = value; }
+		}
+
+		public override string ToString()
+		{
+			return $"Name: {firstName} {lastName}\nAge: {age}\nHeight: {height}\nWeight: {Weight}";
 		}
 	}
 }
