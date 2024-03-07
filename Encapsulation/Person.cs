@@ -17,6 +17,10 @@
 				{
 					age = value;
 				}
+				else
+				{
+					throw new ArgumentException($"{nameof(Age)} must be greater than 0");
+				}
 			} 
 		}
 
@@ -25,9 +29,13 @@
 			get { return firstName; } 
 			set 
 			{ 
-				if (value.Length >= 2 && value.Length <= 10)
+				if (!string.IsNullOrWhiteSpace(value) && value.IsBetween(2, 10))
 				{
 					firstName = value;
+				}
+				else
+				{
+					throw new ArgumentException($"{nameof(FirstName)} is required and cannot be less than 2 or greater than 10 characters");
 				}
 			} 
 		}
@@ -37,9 +45,13 @@
 			get { return lastName; }
 			set 
 			{ 
-				if (value.Length >= 3 && value.Length <= 15)
+				if (!string.IsNullOrWhiteSpace(value) && value.IsBetween(3, 15))
 				{
 					lastName = value;
+				}
+				else
+				{
+					throw new ArgumentException($"{nameof(LastName)} is required and cannot be less than 3 or greater than 15 characters");
 				}
 			}
 		}
