@@ -1,5 +1,8 @@
 ﻿using Encapsulation;
 
+Console.WriteLine("3.1 Encapsulation");
+Console.WriteLine();
+
 void Print(List<Person> people)
 {
 	if (people.Count() > 0)
