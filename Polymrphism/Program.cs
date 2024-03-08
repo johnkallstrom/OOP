@@ -17,6 +17,9 @@ var userErrors = new List<UserError>
 	new CharInputError(),
 	new CharInputError(),
 	new CharInputError(),
+	new DoubleInputError(),
+	new DoubleInputError(),
+	new DoubleInputError(),
 };
 
 foreach (var error in userErrors)
