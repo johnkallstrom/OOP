@@ -28,7 +28,6 @@
 			personToUpdate.Weight = weight;
 		}
 
-		// Todo: Is not working
 		public void DeletePerson(Person personToDelete)
 		{
 			personToDelete = null;

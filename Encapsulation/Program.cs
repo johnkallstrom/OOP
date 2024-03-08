@@ -1,24 +1,31 @@
 ﻿using Encapsulation;
 
 var handler = new PersonHandler();
-
-Person bob = null;
+var people = new List<Person>();
 
 try
 {
-	bob = handler.CreatePerson(55, "Bob", "Frapples", 188, 81);
+	var bob = handler.CreatePerson(55, "Bob", "Frapples", 188, 81);
+	var sally = handler.CreatePerson(37, "Sally", "Samson", 167, 65);
+
+	people.AddRange([bob, sally]);
 }
 catch (ArgumentException ex)
 {
-    Console.WriteLine(ex.Message);
+	Console.WriteLine(ex.Message);
 }
 
-
-if (bob is not null)
+if (people.Count() > 0)
 {
-	Console.WriteLine(bob.ToString());
-}
+	foreach (var person in people)
+	{
+		Console.WriteLine(person.ToString());
 
-handler.DeletePerson(bob);
+		if (!people.Last().Equals(person))
+		{
+			Console.WriteLine();
+		}
+	}
+}
 
 Console.ReadKey();
