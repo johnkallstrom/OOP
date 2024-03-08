@@ -44,12 +44,16 @@ catch (ArgumentException ex)
     Console.WriteLine(ex.Message);
 }
 
-//try
-//{
-//	foreach (var person in people)
-//	{
-
-//	}
-//}
+try
+{
+	foreach (var person in people)
+	{
+		handler.DeletePerson(person);
+	}
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine(ex.Message);
+}
 
 Console.ReadKey();
