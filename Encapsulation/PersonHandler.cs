@@ -28,9 +28,9 @@
 			person.Weight = weight;
 		}
 
-		public void DeletePerson(Person personToDelete)
+		public void DeletePerson(Person person)
 		{
-			personToDelete = null;
+			person = null;
 		}
 	}
 }
