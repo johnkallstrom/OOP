@@ -9,7 +9,7 @@
 		public override void DoSound() => Console.WriteLine("Bark! Bark! Bark!");
 
 		public void Play() => Console.WriteLine($"{Name} plays!");
-		public void Sleep() => Console.WriteLine($"{Name} sleeps!");
+		public void Sleep() => Console.WriteLine($"{Name} sleeps...");
 
 		public override string ToString()
 		{
