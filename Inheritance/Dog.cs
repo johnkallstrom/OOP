@@ -1,14 +1,9 @@
-﻿using Inheritance.Enums;
-
-namespace Inheritance
+﻿namespace Inheritance
 {
 	internal class Dog : Animal
 	{
-        public MoodLevel Mood { get; set; }
-
-        public Dog(string name, int age, double weight, string color, MoodLevel mood) : base(name, age, weight, color)
+        public Dog(string name, int age, double weight, string color, MoodLevel mood) : base(name, age, weight, color, mood)
 		{
-			Mood = mood;
 		}
 
 		public override void DoSound() => Console.WriteLine("Bark! Bark! Bark!");

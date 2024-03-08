@@ -2,7 +2,7 @@
 {
 	internal class Wolf : Animal
 	{
-		public Wolf(string name, int age, double weight, string color) : base(name, age, weight, color)
+		public Wolf(string name, int age, double weight, string color, MoodLevel mood) : base(name, age, weight, color, mood)
 		{
 		}
 
