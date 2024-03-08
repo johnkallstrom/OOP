@@ -11,6 +11,12 @@ var userErrors = new List<UserError>
 	new TextInputError(),
 	new TextInputError(),
 	new TextInputError(),
+	new DateInputError(),
+	new DateInputError(),
+	new DateInputError(),
+	new CharInputError(),
+	new CharInputError(),
+	new CharInputError(),
 };
 
 foreach (var error in userErrors)
