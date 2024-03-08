@@ -1,5 +1,17 @@
 ﻿using Encapsulation;
 
+void Print(List<Person> people)
+{
+	if (people.Count() > 0)
+	{
+		foreach (var person in people)
+		{
+			Console.WriteLine(person.ToString());
+			Console.WriteLine();
+		}
+	}
+}
+
 var handler = new PersonHandler();
 var people = new List<Person>();
 
@@ -9,23 +21,25 @@ try
 	var sally = handler.CreatePerson(37, "Sally", "Samson", 167, 65);
 
 	people.AddRange([bob, sally]);
+	Print(people);
 }
 catch (ArgumentException ex)
 {
 	Console.WriteLine(ex.Message);
 }
 
-if (people.Count() > 0)
+try
 {
 	foreach (var person in people)
 	{
-		Console.WriteLine(person.ToString());
-
-		if (!people.Last().Equals(person))
-		{
-			Console.WriteLine();
-		}
+		handler.UpdatePerson(person, 29, "New", "Name", 176, 68);
 	}
+
+	Print(people);
+}
+catch (ArgumentException ex)
+{
+    Console.WriteLine(ex.Message);
 }
 
 Console.ReadKey();

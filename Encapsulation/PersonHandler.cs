@@ -19,13 +19,13 @@
 			};
 		}
 
-		public void UpdatePerson(Person personToUpdate, int age, string firstName, string lastName, double height, double weight)
+		public void UpdatePerson(Person person, int age, string firstName, string lastName, double height, double weight)
 		{
-			personToUpdate.Age = age;
-			personToUpdate.FirstName = firstName;
-			personToUpdate.LastName = lastName;
-			personToUpdate.Height = height;
-			personToUpdate.Weight = weight;
+			person.Age = age;
+			person.FirstName = firstName;
+			person.LastName = lastName;
+			person.Height = height;
+			person.Weight = weight;
 		}
 
 		public void DeletePerson(Person personToDelete)
