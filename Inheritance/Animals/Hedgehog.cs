@@ -2,10 +2,13 @@
 {
 	internal class Hedgehog : Animal
 	{
-		public Hedgehog(string name, int age, double weight, string color, MoodLevel mood) : base(name, age, weight, color, mood)
+        public int AmountOfSpikes { get; set; }
+
+        public Hedgehog(string name, int age, double weight, string color, MoodLevel mood, int amountOfSpikes) : base(name, age, weight, color, mood)
 		{
+			AmountOfSpikes = amountOfSpikes;
 		}
 
-		public override void DoSound() => Console.WriteLine("");
+		public override void DoSound() => Console.WriteLine("Grunt! Grunt! Grunt!");
 	}
 }
