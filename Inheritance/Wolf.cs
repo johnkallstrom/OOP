@@ -2,10 +2,18 @@
 {
 	internal class Wolf : Animal
 	{
-		public Wolf(string name, int age, double weight, string color, MoodLevel mood) : base(name, age, weight, color, mood)
+        public int Speed { get; set; }
+
+        public Wolf(string name, int age, double weight, string color, MoodLevel mood, int speed) : base(name, age, weight, color, mood)
 		{
+			Speed = speed;
 		}
 
 		public override void DoSound() => Console.WriteLine("Howl! Howl! Howl!");
+
+		public override string ToString()
+		{
+			return $"{Name} - {Age} years old, {Weight} kg, {Color} color, {Mood}, Runs at {Speed} km/h";
+		}
 	}
 }
