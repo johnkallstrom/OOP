@@ -4,7 +4,7 @@
     {
         public int Speed { get; set; }
 
-        public Wolf(string name, int age, double weight, string color, MoodLevel mood, int speed) : base(name, age, weight, color, mood)
+        public Wolf(string name, int age, double weight, string color, MoodLevel mood, Gender gender, int speed) : base(name, age, weight, color, mood, gender)
         {
             Speed = speed;
         }
@@ -15,5 +15,10 @@
         {
             return $"{GetType().Name} - {Age} years old, {Weight} kg, {Color} color, {Mood}, Runs at {Speed} km/h";
         }
-    }
+
+		public override string Stats()
+		{
+            return $"{base.Stats()}\nSpeed: {Speed} km/h";
+		}
+	}
 }

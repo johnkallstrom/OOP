@@ -2,11 +2,17 @@
 {
     internal class Swan : Bird
     {
-        public bool HasMate { get; set; }
+        public bool InRelationship { get; set; }
 
-        public Swan(string name, int age, double weight, string color, MoodLevel mood, int wingspan, bool hasMate) : base(name, age, weight, color, mood, wingspan)
+        public Swan(string name, int age, double weight, string color, MoodLevel mood, Gender gender, int wingspan, bool inRelationship) : base(name, age, weight, color, mood, gender, wingspan)
         {
-            HasMate = hasMate;
+            InRelationship = inRelationship;
         }
-    }
+
+		public override string Stats()
+		{
+            string result = InRelationship is true ? "Yes" : "No";
+            return $"{base.Stats()}\nIn relationship: {result}";
+		}
+	}
 }

@@ -4,7 +4,7 @@
 	{
         public int Wingspan { get; set; }
 
-        public Bird(string name, int age, double weight, string color, MoodLevel mood, int wingspan) : base(name, age, weight, color, mood)
+        public Bird(string name, int age, double weight, string color, MoodLevel mood, Gender gender, int wingspan) : base(name, age, weight, color, mood, gender)
 		{
 			Wingspan = wingspan;
 		}

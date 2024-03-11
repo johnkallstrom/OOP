@@ -7,31 +7,29 @@ Console.WriteLine();
 // F: Om alla djur behöver det nya attributet, vart skulle man lägga det då?
 // S: Animal.cs
 
-var dog = new Dog("Loke", age: 8, weight: 13, "Light brown", MoodLevel.Happy);
-Console.WriteLine(dog.ToString());
-dog.DoSound();
-dog.Play();
-dog.Sleep();
+var animals = new List<Animal>
+{
+	new Dog("Sally", 9, 24, "Gray", MoodLevel.Happy, Gender.Female),
+	new Dog("Frank", 5, 14, "Brown", MoodLevel.Happy, Gender.Male),
+	new Pelican("Paul", 7, 13, "White", MoodLevel.Alert, Gender.Male, wingspan: 300),
+	new Flamingo("Klaus", 4, 4, "Pink", MoodLevel.Calm, Gender.Male, wingspan: 90),
+	new Wolf("Bethany", 7, 43, "Gray", MoodLevel.Cautious, Gender.Female, speed: 60),
+	new Hedgehog("Moe", 2, 0.7, "Light brown", MoodLevel.Sleepy, Gender.Male, amountOfSpikes: 5000),
+	new Swan("Vic", 3, 8, "White", MoodLevel.Calm, Gender.Female, wingspan: 200, inRelationship: true),
+	new Horse("Deborah", 17, 600, "White", MoodLevel.Excited, Gender.Female),
+	new Worm("William", 1, 0.1, "Beige", MoodLevel.Happy, Gender.Male, length: 10),
+	new Wolfman("Jack", 150, 90, "Black", MoodLevel.Brooding, Gender.Male, 15, weaponOfChoice: "Claws"),
+};
 
-Console.WriteLine();
+foreach (var animal in animals)
+{
+    Console.WriteLine(animal.Stats());
 
-var horse = new Horse("Waygon", age: 18, weight: 700, "Black", MoodLevel.Excited);
-Console.WriteLine(horse.ToString());
-horse.DoSound();
-horse.Jump();
-horse.Eat("carrots");
-
-Console.WriteLine();
-
-var wolf = new Wolf("Vide", age: 2, weight: 50, "Gray", MoodLevel.Happy, speed: 50);
-Console.WriteLine(wolf.ToString());
-wolf.DoSound();
-
-Console.WriteLine();
-
-var wolverine = new Wolfman("Jack", age: 161, weight: 101, "Dark", MoodLevel.Alert, speed: 40);
-wolverine.Talk();
-wolverine.ShapeShift();
-wolverine.DoSound();
+	var last = animals.Last();
+	if (!animal.Equals(last))
+	{
+        Console.WriteLine();
+    }
+}
 
 Console.ReadKey();
