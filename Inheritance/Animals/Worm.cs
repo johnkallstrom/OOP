@@ -1,6 +1,6 @@
 ﻿namespace Inheritance.Animals
 {
-    internal class Worm : Animal
+	internal class Worm : Animal
     {
         public int Length { get; set; }
 

@@ -1,6 +1,6 @@
 ﻿namespace Inheritance.Animals
 {
-    internal class Wolf : Animal
+	internal class Wolf : Animal
     {
         public int Speed { get; set; }
 

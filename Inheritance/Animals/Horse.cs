@@ -1,6 +1,6 @@
 ﻿namespace Inheritance.Animals
 {
-    internal class Horse : Animal
+	internal class Horse : Animal
     {
         public Horse(string name, int age, double weight, string color, MoodLevel mood) : base(name, age, weight, color, mood)
         {

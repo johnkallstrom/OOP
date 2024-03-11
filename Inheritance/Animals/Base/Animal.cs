@@ -1,8 +1,8 @@
-﻿namespace Inheritance
+﻿namespace Inheritance.Animals.Base
 {
 	internal abstract class Animal
-	{
-		public string Name { get; set; }
+    {
+        public string Name { get; set; }
         public int Age { get; set; }
         public double Weight { get; set; }
         public string Color { get; set; }
