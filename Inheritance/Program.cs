@@ -24,6 +24,8 @@ var animals = new List<Animal>
 foreach (var animal in animals)
 {
     Console.WriteLine(animal.Stats());
+	Console.Write("Sound: ");
+	animal.DoSound();
 
 	var last = animals.Last();
 	if (!animal.Equals(last))
