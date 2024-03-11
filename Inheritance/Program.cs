@@ -15,4 +15,10 @@ horse.DoSound();
 horse.Jump();
 horse.Eat("carrots");
 
+Console.WriteLine();
+
+var wolf = new Wolf("Vide", age: 2, weight: 50, "Gray", MoodLevel.Happy, speed: 50);
+Console.WriteLine(wolf.ToString());
+wolf.DoSound();
+
 Console.ReadKey();
