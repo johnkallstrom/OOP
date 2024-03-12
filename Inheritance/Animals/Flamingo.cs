@@ -2,7 +2,7 @@
 {
     internal class Flamingo : Bird
     {
-        public Flamingo(string name, int age, double weight, string color, MoodLevel mood, Gender gender, int wingspan) : base(name, age, weight, color, mood, gender, wingspan)
+        public Flamingo(string name, int age, double weight, string color, Mood mood, Gender gender, int wingspan) : base(name, age, weight, color, mood, gender, wingspan)
         {
         }
 

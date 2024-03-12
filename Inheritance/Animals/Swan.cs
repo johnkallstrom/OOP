@@ -4,7 +4,7 @@
     {
         public bool InRelationship { get; set; }
 
-        public Swan(string name, int age, double weight, string color, MoodLevel mood, Gender gender, int wingspan, bool inRelationship) : base(name, age, weight, color, mood, gender, wingspan)
+        public Swan(string name, int age, double weight, string color, Mood mood, Gender gender, int wingspan, bool inRelationship) : base(name, age, weight, color, mood, gender, wingspan)
         {
             InRelationship = inRelationship;
         }

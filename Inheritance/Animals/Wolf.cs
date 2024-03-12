@@ -4,7 +4,7 @@
     {
         public int Speed { get; set; }
 
-        public Wolf(string name, int age, double weight, string color, MoodLevel mood, Gender gender, int speed) : base(name, age, weight, color, mood, gender)
+        public Wolf(string name, int age, double weight, string color, Mood mood, Gender gender, int speed) : base(name, age, weight, color, mood, gender)
         {
             Speed = speed;
         }

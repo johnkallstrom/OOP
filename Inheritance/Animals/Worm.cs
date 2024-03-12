@@ -4,7 +4,7 @@
     {
         public int Length { get; set; }
 
-        public Worm(string name, int age, double weight, string color, MoodLevel mood, Gender gender, int length) : base(name, age, weight, color, mood, gender)
+        public Worm(string name, int age, double weight, string color, Mood mood, Gender gender, int length) : base(name, age, weight, color, mood, gender)
         {
             Length = length;
         }
