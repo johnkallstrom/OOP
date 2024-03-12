@@ -17,6 +17,6 @@ Svar: Listan av animals innehåller olika klasser som alla ärver av basklassen 
 Eftersom metoden Stats() finns deklarerad i basklassen Animal så kommer varje subklass åt den (dvs alla djur som ärver av Animal) och vi kan på de sättet skriva ut statistiken för varje djur. 
 I och med att metoden är virtual kan vi också skriva över den i de subklasser där vi vill kanske lägga till lite extra information, specifik för just den klassen/djuret.
 
-#### F: Skapa en ny metod med valfritt namn i klassen Dog som endast returnerar en valfri sträng. Kommer du åt den metoden från Animals listan?
+#### F: Skapa en ny metod med valfritt namn i klassen Dog som endast returnerar en valfri sträng. Kommer du åt den metoden från Animals listan? Varför inte?
 Svar: Nej, eftersom variabeln "animal" i foreach-loopen är av typen Animal och inte Dog så har vi inte tillgång till den metoden.
 Bara de fält, egenskaper och metoder som ligger i Animal klassen kommer vi åt.
