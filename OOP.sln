@@ -5,9 +5,9 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{EAC6CD88-596C-49AB-AA13-8B14A837281F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymrphism", "Polymrphism\Polymrphism.csproj", "{06684305-3830-4EA8-A2C8-0B0D43E1819E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymrphism", "Polymrphism\Polymrphism.csproj", "{06684305-3830-4EA8-A2C8-0B0D43E1819E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{142AA0F1-2232-41EC-989C-B7D13D5DA3AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{142AA0F1-2232-41EC-989C-B7D13D5DA3AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
