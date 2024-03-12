@@ -1,6 +1,6 @@
 ﻿namespace Inheritance.Enums
 {
-	internal enum MoodLevel
+	internal enum Mood
 	{
 		Happy = 1,
 		Sad = 2,
