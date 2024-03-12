@@ -4,7 +4,7 @@
 	{
         public string WeaponOfChoice { get; set; }
 
-        public Wolfman(string name, int age, double weight, string color, MoodLevel mood, Gender gender, int speed, string weaponOfChoice) : base(name, age, weight, color, mood, gender, speed)
+        public Wolfman(string name, int age, double weight, string color, Mood mood, Gender gender, int speed, string weaponOfChoice) : base(name, age, weight, color, mood, gender, speed)
 		{
 			WeaponOfChoice = weaponOfChoice;
 		}
