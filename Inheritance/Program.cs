@@ -54,6 +54,7 @@ foreach (var animal in animals)
         Console.WriteLine($"Favorite toy: {toy}");
     }
 
+	// Skippa mellanrum efter sista objektet i listan
 	var last = animals.Last();
 	if (!animal.Equals(last))
 	{
