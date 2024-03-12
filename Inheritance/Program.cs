@@ -25,7 +25,7 @@ Console.WriteLine();
 var animals = new List<Animal>
 {
 	new Dog("Sally", 9, 24, "Gray", Mood.Happy, Gender.Female, isMixedBreed: true),
-	new Flamingo("Klaus", 4, 4, "Pink", Mood.Calm, Gender.Male, wingspan: 90),
+	new Flamingo("Klaus", 4, 4, "Pink", Mood.Calm, Gender.Male, wingspan: 90, Species.Greater),
 	new Hedgehog("Moe", 2, 0.7, "Light brown", Mood.Sleepy, Gender.Male, amountOfSpikes: 5000),
 	new Horse("Deborah", 17, 600, "White", Mood.Excited, Gender.Female, height: 1.5),
 	new Pelican("Paul", 7, 13, "White", Mood.Alert, Gender.Male, wingspan: 300, beakLength: 35),

@@ -2,8 +2,11 @@
 {
     internal class Flamingo : Bird
     {
-        public Flamingo(string name, int age, double weight, string color, Mood mood, Gender gender, int wingspan) : base(name, age, weight, color, mood, gender, wingspan)
+        public string Species { get; set; }
+
+        public Flamingo(string name, int age, double weight, string color, Mood mood, Gender gender, int wingspan, string species) : base(name, age, weight, color, mood, gender, wingspan)
         {
+            Species = species;
         }
 
         public void Dance() => Console.WriteLine($"{GetType().Name} starts dancing!");
