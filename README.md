@@ -12,7 +12,7 @@ Svar: Det fungerar inte därför att en häst och en hund är inte samma typ. H�
 #### F: Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
 Svar: Animal
 
-#### F: Skriv ut samtliga Animals Stats() genom en foreach loop. Förklara vad det är som händer
+#### F: Skriv ut samtliga Animals Stats() genom en foreach loop. Testa och se så det fungerar. Förklara vad det är som händer.
 Svar: Listan av animals innehåller olika klasser som alla ärver av basklassen Animal. Foreach-loopen går igenom hela listan och skriver ut statistik för varje djur. 
 Eftersom metoden Stats() finns deklarerad i basklassen Animal så kommer varje subklass åt den (dvs alla djur som ärver av Animal) och vi kan på de sättet skriva ut statistiken för varje djur. 
 I och med att metoden är virtual kan vi också skriva över den i de subklasser där vi vill kanske lägga till lite extra information, specifik för just den klassen/djuret.
